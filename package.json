@@ -96,5 +96,9 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "@dmsi/prettier-config": "^1.3.0",
+    "prettier": "^2.6.2"
   }
 }

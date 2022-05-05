@@ -1,0 +1,147 @@
+.box {
+  padding: 12px;
+  border: 2px solid var(--r-main-color);
+  font-size: 0.5em;
+}
+
+.box li:not(:first-child) {
+  margin-top: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 12px;
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.citation {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+  grid-gap: 12px;
+  width: 75%;
+  justify-content: start;
+  align-items: center;
+  margin-top: 96px;
+}
+
+.citation ~ .citation {
+  margin-top: -12px;
+}
+
+.citation img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.citation p {
+  text-align: left;
+  font-size: 16px;
+}
+
+p.scripture,
+p.quote {
+  padding-left: 24px;
+  border-left: 5px solid var(--r-link-color);
+  text-align: left;
+}
+
+p.quote {
+  font-size: 28px;
+}
+
+ins {
+  text-decoration: none;
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    hsl(269deg, 97%, 35%) 33%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  display: inline-block;
+  width: fit-content;
+  padding: 0 6px;
+  border-radius: 4px;
+  text-shadow: none;
+  z-index: 1;
+}
+
+ins::after {
+  content: "";
+  width: calc(100% - 12px);
+  height: 0;
+  border-bottom: 5px dashed hsl(269deg, 97%, 22%);
+  position: absolute;
+  bottom: 2px;
+  left: 6px;
+  z-index: -1;
+}
+
+.paradigm {
+  display: block;
+  position: relative;
+}
+
+.paradigm-gon {
+  width: 400px;
+  margin: 0 auto;
+  transform: rotate(-12.7deg);
+  position: relative;
+  display: block;
+}
+
+.paradigm svg {
+  fill: #97b55f;
+  stroke: #97b55f;
+}
+
+.pd-point {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  background: #292b4a;
+  border: 2px solid #fff;
+  padding: 12px 24px;
+  border-radius: 24px;
+}
+
+.pd-point-1 {
+  top: 0;
+  left: calc(calc(50% - 121px) + 18px);
+}
+
+.pd-point-2 {
+  top: 60px;
+  left: calc(50% + 120px);
+}
+
+.pd-point-3 {
+  top: 210px;
+  left: calc(50% + 160px);
+}
+
+.pd-point-4 {
+  top: 340px;
+  left: calc(50% + 60px);
+}
+
+.pd-point-5 {
+  top: 340px;
+  right: calc(50% + 60px);
+}
+
+.pd-point-6 {
+  top: 210px;
+  right: calc(50% + 160px);
+}
+
+.pd-point-7 {
+  top: 60px;
+  right: calc(50% + 120px);
+}
