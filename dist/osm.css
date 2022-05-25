@@ -36,8 +36,8 @@
 }
 
 .citation img {
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   overflow: hidden;
   object-fit: cover;
   object-position: top center;
@@ -192,4 +192,51 @@ ins::after {
 .signal .content {
   margin: 0;
   text-align: left;
+}
+
+.cell {
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  font-size: 16px;
+}
+
+.top-row .cell {
+  background: #fff2;
+}
+
+.cell-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.cell-content {
+  margin-top: 8px;
+}
+
+.tray .cell-title {
+  text-align: left;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+}
+
+.tray svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tray .cell-content {
+  font-size: 16px;
+  text-align: left;
+}
+
+.prophet {
+  margin-top: 8px;
 }
