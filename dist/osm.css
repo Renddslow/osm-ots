@@ -240,3 +240,29 @@ ins::after {
 .prophet {
   margin-top: 8px;
 }
+
+.poem-line {
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: start;
+  line-height: 2;
+  text-align: left;
+}
+
+.poem-line div {
+  padding: 0 16px;
+}
+
+.poem-line div:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+
+.reference {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 24px;
+}
